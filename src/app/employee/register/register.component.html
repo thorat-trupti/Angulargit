@@ -1,0 +1,32 @@
+
+<form [formGroup]="Empform" (ngSubmit)="onSubmit()">
+    <h4 class ="text-center mb-5"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign up here!!!</h4>
+     
+    <div class="for-outline mb-3" *ngIf="!boolean1">
+        <label class="form-control">Enter Employee Id</label>
+        <input type="text" class="form-control" formControlName="id" >
+    </div>
+
+    <div class="for-outline mb-3">
+        <label class="form-control">Enter Employee Name</label>
+        <input type="text" class="form-control" formControlName="Ename">
+    </div>
+
+    <div class="for-outline mb-3">
+        <label class="form-control">Enter Employee Designation</label>
+        <input type="text" class="form-control" formControlName="Designation">
+    </div>
+
+    <div class="for-outline mb-3">
+        <label class="form-control">Enter Employee Email Id</label>
+        <input type="text" class="form-control" formControlName="Email">
+    </div>
+
+    <div class="for-outline">
+        <label class="form-label">Enter Employee Salary</label>
+        <input type="number" class="form-control" formControlName="Salary">
+    </div>
+   <br>
+    <button type ="submit" class ="btn btn-info tn-lg mb-5 w=100">Sign Up</button>
+    <button type= "button" class="btn btn-info tn-lg mb-5 w=100" (click)="onUpdate()" [hidden]="!boolean1">Update</button>
+</form>

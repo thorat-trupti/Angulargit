@@ -1,0 +1,17 @@
+<div class = "row w-100 text-center m-0 bg-light">
+    <h1 style ="color:rgb(58, 145, 220)">User Crud Application</h1>
+</div>
+
+<div class ="row w-100 m-o  p-2">
+    <div class ="col-6 border border-danger border">
+    <app-register [userEdit] ="editUser"></app-register>
+</div>
+
+<div class ="col-6 border border-danger border">
+    <app-view-user (editdata)="patchEditData($event)"></app-view-user>
+</div>
+</div>
+
+
+
+

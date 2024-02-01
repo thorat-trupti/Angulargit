@@ -1,0 +1,18 @@
+{
+  "Employee": [
+    {
+      "id": "1",
+      "Ename": "Ankita",
+      "Designation": "HR1234",
+      "Salary": 40000,
+      "Email": "ank@gmail.com"
+    },
+    {
+      "id": "2",
+      "Ename": "Kanta",
+      "Designation": "Emp",
+      "Salary": 13000,
+      "Email": "kar@gmail.com"
+    }
+  ]
+}

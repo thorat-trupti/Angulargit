@@ -1,0 +1,22 @@
+<h4 class ="text-center mb-5">
+    <i class="fa fa-user-plus" aria-hidden="true">
+    </i>Employee Data!!!</h4>
+
+<table class="table table-hover text-center" >
+<th>EId</th>
+<th>EName</th>
+<th>Edesignation</th>
+<th>Email</th>
+<th>Salary</th>
+<th>Action</th>
+<tr *ngFor="let u of user">
+<td>{{u.id}}</td>
+<td>{{u.Ename}}</td>
+<td>{{u.Designation}}</td>
+<td>{{u.Email}}</td>
+<td>{{u.Salary}}</td>
+<td><button class ="btn btn-primary me-1" (click)="onEditUser(u)"><i class="fa fa-pencil" aria-hidden="true" ></i></button>
+<button class ="btn btn-primary me-1" (click)="OnDelete(u.id)"><i class="fa fa-trash" aria-hidden="true" color="red"></i></button></td>
+</tr>
+</table>
+     
